@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Voice Mode Updates</title>
+    <link>https://raw.githubusercontent.com/mhkey/homebrew-voicemode/main/appcast.xml</link>
+    <language>en</language>
+    <item>
+      <title>Version 0.4.6</title>
+      <pubDate>Mon, 06 Apr 2026 13:35:46 +0000</pubDate>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/mhkey/homebrew-voicemode/releases/download/v0.4.6/VoiceMode-0.4.6.zip" sparkle:version="0.4.6" sparkle:shortVersionString="0.4.6" length="13638371" type="application/octet-stream" sparkle:edSignature="aZKxAlB+yKl2pWTSeKAoecXqemutzGGxzuc9d39yYsWd6LTMM0hwciGkrhTPTYtU/EnvTC//nMzbQo1wB2roAw==" />
+    </item>
+  </channel>
+</rss>
