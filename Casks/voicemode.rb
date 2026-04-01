@@ -5,9 +5,9 @@
 
 cask "voicemode" do
   version "0.2.0b1"
-  sha256 "021af87745600803b16830f426da07b05b9b7b67de6dffd7b67c1fefae7f59a3"
+  sha256 "641fbdde6ba9f52c1a14ec4be241a3d02c8275d236884af5092461b1d941efd5"
 
-  url "https://api.github.com/repos/mhkey/homebrew-voicemode-dev/releases/assets/386176766",
+  url "https://api.github.com/repos/mhkey/homebrew-voicemode-dev/releases/assets/386179402",
       header: [
         "Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
         "Accept: application/octet-stream",
@@ -19,6 +19,7 @@ cask "voicemode" do
   # Apple Silicon only (MLX requirement)
   depends_on arch: :arm64
   depends_on macos: ">= :sonoma"
+  depends_on formula: "pyenv"
 
   app "VoiceMode.app"
 
@@ -48,10 +49,11 @@ cask "voicemode" do
   caveats <<~EOS
     Voice Mode requires:
       - Apple Silicon Mac (M1/M2/M3/M4)
-      - Python 3.10+ (install via: brew install python@3.11)
       - Microphone + Accessibility permissions (grant when prompted)
       - GitHub token: export HOMEBREW_GITHUB_API_TOKEN=$(gh auth token)
         Add this to your ~/.zshrc to persist it.
+
+    Python 3.11 is installed automatically via pyenv during setup.
 
     First launch downloads ~2.4 GB of ML models. This only happens once.
 
