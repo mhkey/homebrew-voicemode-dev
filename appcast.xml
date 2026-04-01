@@ -5,10 +5,10 @@
     <link>https://raw.githubusercontent.com/mhkey/homebrew-voicemode-dev/main/appcast.xml</link>
     <language>en</language>
     <item>
-      <title>Version 0.2.0</title>
-      <pubDate>Wed, 01 Apr 2026 12:53:04 +0000</pubDate>
+      <title>Version 0.2.1</title>
+      <pubDate>Wed, 01 Apr 2026 13:03:13 +0000</pubDate>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/mhkey/homebrew-voicemode-dev/releases/download/v0.2.0/VoiceMode-0.2.0.zip" sparkle:version="0.2.0" sparkle:shortVersionString="0.2.0" length="3184031" type="application/octet-stream" sparkle:edSignature="yadZDX5InRz6QLx8o8nddg18chRDeQ7/nOYVFzfJGWLPjNBUMH/9rhbozmor2FYDzuTRPyHhuS+/q21019RsDA==" />
+      <enclosure url="https://github.com/mhkey/homebrew-voicemode-dev/releases/download/v0.2.1/VoiceMode-0.2.1.zip" sparkle:version="0.2.1" sparkle:shortVersionString="0.2.1" length="3189003" type="application/octet-stream" sparkle:edSignature="SATJUiAT0YiWUiKb/lp7IoBjTxASuQALkeWrhxbH9N7euxJkJ+CHPoper3qdTXDZLsyVSKSzEiYnY5IUAjLqCw==" />
     </item>
   </channel>
 </rss>
