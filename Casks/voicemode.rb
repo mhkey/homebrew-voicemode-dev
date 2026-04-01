@@ -5,9 +5,9 @@
 
 cask "voicemode" do
   version "0.2.0b1"
-  sha256 "0f6dc5c17d1a403a382b88dbb4defa9cd6a44cfc081631fd8552c8ff464163ab"
+  sha256 "a976e1b5bf15da27cbfbeb41d641857180da54da87978afb03d2c5cae2cf030d"
 
-  url "https://api.github.com/repos/mhkey/homebrew-voicemode-dev/releases/assets/386172870",
+  url "https://api.github.com/repos/mhkey/homebrew-voicemode-dev/releases/assets/386174399",
       header: [
         "Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
         "Accept: application/octet-stream",
