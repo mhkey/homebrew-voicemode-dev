@@ -5,8 +5,7 @@ cask "voicemode" do
   version "0.2.0b1"
   sha256 "d61a017a433eab793e5b833f9c7ff88cfd3415a90848d970db96e4fd414dd780"
 
-  url "https://github.com/mhkey/ProjectAI/releases/download/v#{version}/VoiceMode-#{version}.zip",
-      header: "Authorization: token #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", "")}"
+  url "https://github.com/mhkey/homebrew-voicemode-dev/releases/download/v#{version}/VoiceMode-#{version}.zip"
   name "Voice Mode"
   desc "Local voice-to-text dictation for coding on macOS — fully on-device, Apple Silicon"
   homepage "https://github.com/mhkey/ProjectAI"
