@@ -1,17 +1,12 @@
 # Homebrew Cask for Voice Mode
 # Install: brew install --cask mhkey/voicemode-dev/voicemode
-#
-# Requires: export HOMEBREW_GITHUB_API_TOKEN=$(gh auth token)
 
 cask "voicemode" do
-  version "0.2.0b1"
-  sha256 "283912eb1381532aa1f5e1a649b21d2260e8d4607d70a08b57290984fe71f1d4"
+  version "0.2.0"
+  sha256 "d2abbbbce54231f79af250085daf8257c963784102cc24b5e8e66b303412ca5c"
 
-  url "https://api.github.com/repos/mhkey/homebrew-voicemode-dev/releases/assets/386194439",
-      header: [
-        "Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
-        "Accept: application/octet-stream",
-      ]
+  url "https://github.com/mhkey/homebrew-voicemode-dev/releases/download/v#{version}/VoiceMode-#{version}.zip",
+      header: "Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}"
   name "Voice Mode"
   desc "Local voice-to-text dictation for coding on macOS — fully on-device, Apple Silicon"
   homepage "https://github.com/mhkey/ProjectAI"
@@ -19,7 +14,6 @@ cask "voicemode" do
   # Apple Silicon only (MLX requirement)
   depends_on arch: :arm64
   depends_on macos: ">= :sonoma"
-  depends_on formula: "pyenv"
 
   app "VoiceMode.app"
 
@@ -49,11 +43,10 @@ cask "voicemode" do
   caveats <<~EOS
     Voice Mode requires:
       - Apple Silicon Mac (M1/M2/M3/M4)
+      - Python 3.10+ (install via: brew install python@3.11)
       - Microphone + Accessibility permissions (grant when prompted)
       - GitHub token: export HOMEBREW_GITHUB_API_TOKEN=$(gh auth token)
         Add this to your ~/.zshrc to persist it.
-
-    Python 3.11 is installed automatically via pyenv during setup.
 
     First launch downloads ~2.4 GB of ML models. This only happens once.
 
