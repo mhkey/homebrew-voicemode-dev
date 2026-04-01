@@ -3,7 +3,7 @@
 
 cask "voicemode" do
   version "0.2.0b1"
-  sha256 "PLACEHOLDER_SHA256"
+  sha256 "d61a017a433eab793e5b833f9c7ff88cfd3415a90848d970db96e4fd414dd780"
 
   url "https://github.com/mhkey/ProjectAI/releases/download/v#{version}/VoiceMode-#{version}.zip"
   name "Voice Mode"

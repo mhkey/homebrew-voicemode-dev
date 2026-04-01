@@ -4,6 +4,11 @@
     <title>Voice Mode Updates</title>
     <link>https://raw.githubusercontent.com/mhkey/homebrew-voicemode-dev/main/appcast.xml</link>
     <language>en</language>
-    <!-- Updated by scripts/release.sh -->
+    <item>
+      <title>Version 0.2.0b1</title>
+      <pubDate>Wed, 01 Apr 2026 08:22:28 +0000</pubDate>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/mhkey/ProjectAI/releases/download/v0.2.0b1/VoiceMode-0.2.0b1.zip" sparkle:version="0.2.0b1" sparkle:shortVersionString="0.2.0b1" length="753948" type="application/octet-stream" />
+    </item>
   </channel>
 </rss>
