@@ -1,15 +1,14 @@
 # Homebrew Cask for Voice Mode
-# Install: brew install --cask mhkey/voicemode-dev/voicemode
+# Install: brew install --cask voicemode
 
 cask "voicemode" do
   version "0.3.2"
   sha256 "dffd716c3fc71375f9fd898f52a1c18378006b815f11835b6efd93aa7a34b315"
 
-  url "https://github.com/mhkey/homebrew-voicemode-dev/releases/download/v#{version}/VoiceMode-#{version}.zip",
-      header: "Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}"
+  url "https://github.com/mhkey/homebrew-voicemode/releases/download/v#{version}/VoiceMode-#{version}.zip"
   name "Voice Mode"
   desc "Local voice-to-text dictation for coding on macOS — fully on-device, Apple Silicon"
-  homepage "https://github.com/mhkey/ProjectAI"
+  homepage "https://github.com/mhkey/voicemode"
 
   depends_on arch: :arm64
   depends_on macos: ">= :sequoia"
@@ -26,8 +25,6 @@ cask "voicemode" do
       - Apple Silicon Mac (M1/M2/M3/M4)
       - macOS 15 (Sequoia) or later
       - Microphone + Accessibility permissions (grant when prompted)
-      - GitHub token: export HOMEBREW_GITHUB_API_TOKEN=$(gh auth token)
-        Add this to your ~/.zshrc to persist it.
 
     First launch downloads ML models (~1 GB). This only happens once.
 
