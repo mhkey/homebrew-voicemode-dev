@@ -2,8 +2,8 @@
 # Install: brew install --cask voicemode
 
 cask "voicemode" do
-  version "0.5.0"
-  sha256 "8204c9dfc2a44f0bb4cec2af7769f6f7ad5cb7cbf3f7c4658fb87f3dc04ee96b"
+  version "0.5.1"
+  sha256 "1283f14cbc69655fbfcf62efebe48559eb009115c27e0199955128434a0147d0"
 
   url "https://github.com/mhkey/homebrew-voicemode/releases/download/v#{version}/VoiceMode-#{version}.zip"
   name "Voice Mode"
@@ -17,7 +17,7 @@ cask "voicemode" do
 
   zap trash: [
     "~/Library/Application Support/VoiceMode",
-    "~/.config/voice-mode",
+    "~/.config/voicemode",
   ]
 
   caveats <<~EOS
@@ -28,6 +28,6 @@ cask "voicemode" do
 
     First launch downloads ML models (~1 GB). This only happens once.
 
-    Config: ~/.config/voice-mode/
+    Config: ~/.config/voicemode/
   EOS
 end
